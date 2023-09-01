@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+
+
+<style>
+  #image {
+    display: none;
+    align-content: center;
+    height: 150px;
+    width: auto;
+  }
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.card-title {
+  font-family: 'Roboto', sans-serif; 
+}
+button {
+  align-content: center;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+img {
+    width: 100px;
+    height: auto;
+    align-items: center;
+}
+.card-content {
+  font-family: 'Roboto', sans-serif;
+}
+  .card-container {
+    display: grid;
+    
+    
+    max-width: 400px;
+    border: 1px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    
+    margin: 20px auto;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .card-content {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+  }
+</style>
+<title>BoG application</title>
+</head>
+<body>
+<div class="card-container">
+  <div class="card-title">
+    <img src="IMG_6493-modified.png".jpg" alt="Picture of me"><br></br>
+Venkatesan Sundar<br></br>CS Sophomore</div>
+
+
+  <div class="card-content">
+    I know I'm submitting this late, but I was super tied up with homework. If you accept my application, yayy!!
+    If not, at least I got to practice (learn) some more HTML. <br></br>I'm passionate about teaching and volunteering, and am honing my teaching skills through working as a tutor during my time at Tech!
+    
+    <br></br><button type="button" onclick="show()" id="btnID" >Click for internet cat</button>
+    <br> <img src="cats.jpg" id="image">
+
+  </div>
+</div>
+<script>
+  function show() {
+      
+      document.getElementById('image')
+          .style.display = "block";
+      document.getElementById('btnID')
+          .style.display = "none";
+  }
+</script>
+</body>
+</html>
